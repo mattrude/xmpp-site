@@ -5,6 +5,10 @@ permalink: /help/using-conferences/
 ---
 
 {% if site.xmpp-conference-url and site.xep-0045 == 1 %}
+# Conferences
+
+XMPP is normally a single person to single person chat system, but it has the ability to also run conference rooms.  A conference room or MUC (Multiple User Chat) allows users on the same server, or via federation, different servers or domains, to all connect to the same chat room.  Similar to how IRC works.
+
 ## Connecting from a federated XMPP server
 
 By default the server will try to use [TLS]({{ site.url }}/help/definitions/#tls) if the other side supports it, and fall back to [dialback]({{ site.url }}/help/definitions/#dialback) if it does not or if the certificate is incorrect or not trusted.

@@ -21,4 +21,4 @@ Some clients may require you to specify a full IM address when you're adding som
 
 If you want to access a chat room, you may need to specify the chat room server. It's `{{ site.xmpp-conference-url }}`. The generic address of a chat room is `chatroom-name@{{ site.xmpp-conference-url }}`. Note that the "real" name of a chat room cannot have spaces, but you can specify a nickname or description which some clients will display in lieu of the real name -- this can cause some confusion.
 
-Please see the page [Using Conferences]({{ site.url }}/help/using-conferences/) for more infromation on how to connect and use the confrencing service.
+Please see the page [Using Conferences]({{ site.url }}/help/using-conferences/) for more information on how to connect and use the conferencing service.

@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-This is the **{{ site.name }}** communication service website.  This site is here to provide basic infromation on using this service.  A [XMPP]({{ site.url }}/help/definitions/#xmpp-server) service provides messaging ability via a local client.  By using this service, security in increased due to the settings and the fact this service is owned and ran by the users.{% if site.xep-0375 == 1%}  This service is in complete compliance with [XEP-0375](https://xmpp.org/extensions/xep-0375.html). The XEP-0375 document specifies the 2016 compliance levels for XMPP clients and servers.{% endif %}
+This is the **{{ site.name }}** communication service website.  This site is here to provide basic infromation on using this service.  A [XMPP]({{ site.url }}/help/definitions/#xmpp-server) service provides messaging ability via a local client.  {% if site.xep-0375 == 1%}This service is in complete compliance with [XEP-0375](https://xmpp.org/extensions/xep-0375.html). The XEP-0375 document specifies the 2016 compliance levels for XMPP clients and servers.{% endif %}
 
 ## How to use the service
 
