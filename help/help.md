@@ -11,3 +11,4 @@ permalink: /help/
 * [Generic Configuration]({{ site.url }}/help/generic-configuration/){% if site.xmpp-conference-url and site.xep-0045 == 1 %}
 * [Using Conferences]({{ site.url }}/help/using-conferences/){% endif %}
 * [Using Web Presence]({{ site.url }}/help/web-presence/)
+* [Using HAL Bot]({{ site.url }}/help/hal-robot/)
