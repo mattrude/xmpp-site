@@ -85,7 +85,7 @@ Web Presence provides the status of a user via a image URL.  Please see the page
 {% if site.fingerprints == 1 %}
 ### Certificates Fingerprints
 
-One of the benefits of communicating via XMPP is the level of security involved.  To allow users to validate the servers they are connecting to, below is the current fingerprints for each domain name.
+One of the benefits of communicating via XMPP is the level of security involved.  To allow users to validate the servers they are connecting to, below is the current fingerprints for each domain name. {% if site.fingerprint-expires %} This certificate expires on {{ site.fingerprint-expires }}.{% endif %}
 
 <div id="cert-table">
 {% if site.fingerprint-sha1 %}
@@ -118,6 +118,22 @@ One of the benefits of communicating via XMPP is the level of security involved.
   </div>
   <div class="cert-content">
     <pre>{{ site.fingerprint-conference-sha256 }}</pre>
+  </div>
+{% endif %}
+{% if site.fingerprint-proxy-sha1 %}
+  <div class="cert-title">
+    <b>{{ site.xmpp-proxy-url }}<small> - SHA1 Fingerprint</small></b>
+  </div>
+  <div class="cert-content">
+    <pre>{{ site.fingerprint-proxy-sha1 }}</pre>
+  </div>
+{% endif %}
+{% if site.fingerprint-proxy-sha256 %}
+  <div class="cert-title">
+    <b>{{ site.xmpp-proxy-url }}<small> - SHA256 Fingerprint</small></b>
+  </div>
+  <div class="cert-content">
+    <pre>{{ site.fingerprint-proxy-sha256 }}</pre>
   </div>
 {% endif %}
 </div> <!-- Closing cert-table id div -->
