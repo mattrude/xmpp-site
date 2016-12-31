@@ -82,65 +82,6 @@ Web Presence provides the status of a user via a image URL.  Please see the page
 * The backend is configured to store hashed and salted authentication data
 * Use Off-the-Record (OTR) in your chat client to have fully encrypted chats
 
-{% if site.fingerprints == 1 %}
-### Certificates Fingerprints
-
-One of the benefits of communicating via XMPP is the level of security involved.  To allow users to validate the servers they are connecting to, below is the current fingerprints for each domain name. {% if site.fingerprint-expires %} This certificate expires on {{ site.fingerprint-expires }}.{% endif %}
-
-<div id="cert-table">
-{% if site.fingerprint-sha1 %}
-  <div class="cert-title">
-    <b>{{ site.xmpp-url }}<small> - SHA1 Fingerprint</small></b>
-  </div>
-  <div class="cert-content">
-    <pre>{{ site.fingerprint-sha1 }}</pre>
-  </div>
-{% endif %}
-{% if site.fingerprint-sha256 %}
-  <div class="cert-title">
-    <b>{{ site.xmpp-url }}<small> - SHA256 Fingerprint</small></b>
-  </div>
-  <div class="cert-content">
-    <pre>{{ site.fingerprint-sha256 }}</pre>
-  </div>
-{% endif %}
-{% if site.xmpp-conference-url and site.xep-0045 == 1 and site.fingerprint-conference-sha1 %}
-  <div class="cert-title">
-    <b>{{ site.xmpp-conference-url }}<small> - SHA1 Fingerprint</small></b>
-  </div>
-  <div class="cert-content">
-    <pre>{{ site.fingerprint-conference-sha1 }}</pre>
-  </div>
-{% endif %}
-{% if site.xmpp-conference-url and site.xep-0045 == 1 and site.fingerprint-conference-sha256 %}
-  <div class="cert-title">
-    <b>{{ site.xmpp-conference-url }}<small> - SHA256 Fingerprint</small></b>
-  </div>
-  <div class="cert-content">
-    <pre>{{ site.fingerprint-conference-sha256 }}</pre>
-  </div>
-{% endif %}
-{% if site.xmpp-proxy-url and site.xep-0065 == 1 and site.fingerprint-proxy-sha1 %}
-  <div class="cert-title">
-    <b>{{ site.xmpp-proxy-url }}<small> - SHA1 Fingerprint</small></b>
-  </div>
-  <div class="cert-content">
-    <pre>{{ site.fingerprint-proxy-sha1 }}</pre>
-  </div>
-{% endif %}
-{% if site.xmpp-proxy-url and site.xep-0065 == 1 and site.fingerprint-proxy-sha256 %}
-  <div class="cert-title">
-    <b>{{ site.xmpp-proxy-url }}<small> - SHA256 Fingerprint</small></b>
-  </div>
-  <div class="cert-content">
-    <pre>{{ site.fingerprint-proxy-sha256 }}</pre>
-  </div>
-{% endif %}
-</div> <!-- Closing cert-table id div -->
-{% endif %}
-
-<p style='text-align:right;'><a href="https://xmpp.net/result.php?domain={{ site.xmpp-url }}&amp;type=server"><img src="https://xmpp.net/badge.php?domain={{ site.xmpp-url }}" alt="xmpp.net score" /></a></p>
-
 ## Policies
 
 No more information is collected and stored than what is absolutely necessary. This includes rosters, vCards, offline messages, etc.
