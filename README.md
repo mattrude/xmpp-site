@@ -1,5 +1,6 @@
 # Communication Service Website Source
 
+This is the website for [Matt Rude](https://mattrude.com)'s XMPP service.  This site may be loaded via the [xmpp-site-builder](https://code.mattrude.com/xmpp-site-builder/) repository.
 
 ## Jekyll
 
@@ -15,9 +16,9 @@ First change into the source directory of the site, once in, update via
 
 A simple script would be
 
-    rm -rf /var/src/im.mattrude.com && mkdir -p /var/src/ && \
-    git clone git@github.com:mattrude/im.mattrude.com.git /var/src/im.mattrude.com -q && \
-    cd /var/src/im.mattrude.com && jekyll build -q && rm -rf /var/src/im.mattrude.com
+    rm -rf /var/src/xmpp-site && mkdir -p /var/src/ && \
+    git clone http://code.mattrude.com/git/xmpp-site /var/src/xmpp-site -q && \
+    cd /var/src/xmpp-site && jekyll build -q && rm -rf /var/src/xmpp-site
 
 ## Installing the server
 
