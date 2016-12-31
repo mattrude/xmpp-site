@@ -14,7 +14,7 @@ This service requires the use of a client to connect to the server with.  Please
 
 * Hostname: <b>{{ site.xmpp-url }}</b>
 * Port: <b>5222</b>{% if site.xmpp-conference-url and site.xep-0045 == 1 %}
-* Conference Rooms: <b>{{ site.xmpp-conference-url }}</b>{% endif %}{% if site.xmpp-proxy-url %}
+* Conference Rooms: <b>{{ site.xmpp-conference-url }}</b>{% endif %}{% if site.xmpp-proxy-url and site.xep-0065 == 1 %}
 * Socks 5 Proxy: <b>{{ site.xmpp-proxy-url }}</b>{% endif %}
 
 ## Services Provided
@@ -104,7 +104,7 @@ One of the benefits of communicating via XMPP is the level of security involved.
     <pre>{{ site.fingerprint-sha256 }}</pre>
   </div>
 {% endif %}
-{% if site.fingerprint-conference-sha1 %}
+{% if site.xmpp-conference-url and site.xep-0045 == 1 and site.fingerprint-conference-sha1 %}
   <div class="cert-title">
     <b>{{ site.xmpp-conference-url }}<small> - SHA1 Fingerprint</small></b>
   </div>
@@ -112,7 +112,7 @@ One of the benefits of communicating via XMPP is the level of security involved.
     <pre>{{ site.fingerprint-conference-sha1 }}</pre>
   </div>
 {% endif %}
-{% if site.fingerprint-conference-sha256 %}
+{% if site.xmpp-conference-url and site.xep-0045 == 1 and site.fingerprint-conference-sha256 %}
   <div class="cert-title">
     <b>{{ site.xmpp-conference-url }}<small> - SHA256 Fingerprint</small></b>
   </div>
@@ -120,7 +120,7 @@ One of the benefits of communicating via XMPP is the level of security involved.
     <pre>{{ site.fingerprint-conference-sha256 }}</pre>
   </div>
 {% endif %}
-{% if site.fingerprint-proxy-sha1 %}
+{% if site.xmpp-proxy-url and site.xep-0065 == 1 and site.fingerprint-proxy-sha1 %}
   <div class="cert-title">
     <b>{{ site.xmpp-proxy-url }}<small> - SHA1 Fingerprint</small></b>
   </div>
@@ -128,7 +128,7 @@ One of the benefits of communicating via XMPP is the level of security involved.
     <pre>{{ site.fingerprint-proxy-sha1 }}</pre>
   </div>
 {% endif %}
-{% if site.fingerprint-proxy-sha256 %}
+{% if site.xmpp-proxy-url and site.xep-0065 == 1 and site.fingerprint-proxy-sha256 %}
   <div class="cert-title">
     <b>{{ site.xmpp-proxy-url }}<small> - SHA256 Fingerprint</small></b>
   </div>
