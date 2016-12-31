@@ -5,7 +5,7 @@ permalink: /certificates/
 ---
 
 # Server Certificates
-One of the benefits of communicating via XMPP is the level of security involved.  To allow users to validate the servers they are connecting to, below is the current fingerprints for each domain name. {% if site.fingerprint-expires %} This certificate expires on {{ site.fingerprint-expires }}.{% endif %}
+One of the benefits of communicating via XMPP is the level of security involved.  To allow users to validate the servers they are connecting to, below is the current fingerprints for each domain name.
 
 <div id="cert-table">
 <h2>{{ site.xmpp-url }}</h2>
