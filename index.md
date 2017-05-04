@@ -15,7 +15,8 @@ This service requires the use of a client to connect to the server with.  Please
 * Hostname: <b>{{ site.xmpp-url }}</b>
 * Port: <b>5222</b>{% if site.xmpp-conference-url and site.xep-0045 == 1 %}
 * Conference Rooms: <b>{{ site.xmpp-conference-url }}</b>{% endif %}{% if site.xmpp-proxy-url and site.xep-0065 == 1 %}
-* Socks 5 Proxy: <b>{{ site.xmpp-proxy-url }}</b>{% endif %}
+* Socks 5 Proxy: <b>{{ site.xmpp-proxy-url }}</b>{% endif %}{% if site.xmpp-upload-url and site.xep-0363 == 1 %}
+* HTTP Upload: <b>{{ site.xmpp-upload-url }}</b>{% endif %}
 
 ## Services Provided
 
@@ -80,7 +81,7 @@ Web Presence provides the status of a user via a image URL.  Please see the page
 
 * SSL/TLS encryption is [required](https://github.com/stpeter/manifesto/blob/master/manifesto.txt) between clients and servers (C2S) and server to server (S2S) connections
 * The backend is configured to store hashed and salted authentication data
-* Use Off-the-Record (OTR) in your chat client to have fully encrypted chats
+* Use Off-the-Record ([OTR]({{ site.url }}/help/definitions/#otr)) in your chat client to have fully encrypted chats
 
 ## Policies
 

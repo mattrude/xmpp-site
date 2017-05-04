@@ -1,22 +1,46 @@
 # Site settings
-title: therudes.com Communication Service
+title: mattrude.com Communication Service
 email: matt@mattrude.com
 description: ""
-url: "https://conference.therudes.com"
-name: "conference.therudes.com"
-baseurl: ""
-destination: "/var/www/therudes.im"
+url: "https://im.mattrude.com"
+name: "mattrude.com"
+baseurl: "im.mattrude.com"
+destination: "/root/xmpp-site/www/im.mattrude.com"
 
 owner_name: "Matt Rude"
 owner_pgpkey: "0xc4909ee495b0761f"
 
-xmpp-url: "therudes.com"
-xmpp-conference-url: "conference.therudes.com"
-fingerprint-sha1: "BD:32:61:05:5D:F2:1D:FC:9E:40:74:29:CC:37:98:60:B5:C6:7C:8B"
-fingerprint-sha256: "C3:0E:A2:BF:1E:C5:C4:DD:E9:BE:10:1D:A1:F6:79:34:7C:FD:4A:CF:7F:73:22:16:CA:DC:F5:4C:59:A7:F8:1D"
-fingerprint-conference-sha1: "35:3E:7B:63:89:B3:C6:6D:D7:32:70:C6:8B:27:92:A6:74:1C:98:96"
-fingerprint-conference-sha256: "8F:54:F8:8B:C1:52:C3:40:E6:47:94:9D:DA:1E:1E:51:E5:92:FC:9F:79:A8:E3:2D:2E:84:1D:FC:F2:8B:7A:AD"
-prosody-version: "0.10.0"
+xmpp-url: "mattrude.com"
+xmpp-host: "im.mattrude.com"
+xmpp-conference-url: "conference.mattrude.com"
+xmpp-proxy-url: "proxy.mattrude.com" # XEP-0065: SOCKS5 Bytestreams (Proxy)
+
+xep-0163: 1 # Personal Eventing Protocal
+xep-0237: 1 # Roster Versioning
+xep-0280: 1 # Message Carbons
+xep-0191: 1 # Blocking Command
+xep-0045: 0 # Multi-User Chat
+xep-0198: 1 # Stream Management
+xep-0313: 1 # Message Archive Management
+xep-0352: 1 # Client State Indication
+xep-0363: 1 # HTTP File Upload
+xep-0065: 0 # SOCKS 5 Bytestreams (Proxy)
+xep-0357: 1 # Push Notifications
+xep-0375: 0 # XMPP protocol compliance levels for 2016
+
+fingerprints: 1
+fingerprint-proxy: 1
+fingerprint-conference: 0
+fingerprint-expires: "May 30 16:34:00 2017 GMT"
+fingerprint-conference-expires: "May 30 16:34:00 2017 GMT"
+fingerprint-proxy-expires: "May 30 16:34:00 2017 GMT"
+fingerprint-sha1: "F1:25:FD:E3:FA:A8:83:92:76:D6:C4:52:7F:01:52:BB:FB:82:C0:9A"
+fingerprint-sha256: "FC:07:0F:0E:2D:ED:32:B3:6F:56:75:BF:15:E6:AF:E2:37:89:AC:1D:0B:42:AD:75:D3:1D:1D:C4:14:F7:EA:E6"
+fingerprint-conference-sha1: "F1:25:FD:E3:FA:A8:83:92:76:D6:C4:52:7F:01:52:BB:FB:82:C0:9A"
+fingerprint-conference-sha256: "FC:07:0F:0E:2D:ED:32:B3:6F:56:75:BF:15:E6:AF:E2:37:89:AC:1D:0B:42:AD:75:D3:1D:1D:C4:14:F7:EA:E6"
+fingerprint-proxy-sha1: "F1:25:FD:E3:FA:A8:83:92:76:D6:C4:52:7F:01:52:BB:FB:82:C0:9A"
+fingerprint-proxy-sha256: "FC:07:0F:0E:2D:ED:32:B3:6F:56:75:BF:15:E6:AF:E2:37:89:AC:1D:0B:42:AD:75:D3:1D:1D:C4:14:F7:EA:E6"
+prosody-version: "0.10"
 
 # Analytics settings
 #google_analytics_id: UA-9532791-9
@@ -37,8 +61,7 @@ exclude:
 
 gems:
 - jekyll-sitemap
-- jekyll-minifier
-#- jekyll-less
+- jekyll-less
 #- jekyll-press
 #- jekyll-redirect-from
 #- jekyll-last-modified-at

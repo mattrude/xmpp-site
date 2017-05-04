@@ -9,6 +9,8 @@ permalink: /help/definitions/
 
 ## Dialback
 
+<b>Dialback</b> is used between two (2) XMPP servers to provide identity verification. Server Dialback uses the Domain Name System ([DNS](#DNS)) as the basis for verifying identity; the basic approach is that when a receiving server accepts a server-to-server connection from an initiating server, it does not process XMPP [stanzas](#stanza) over the connection until it has verified the initiating server's identity.
+
 ## Domain
 
 ## DNS
