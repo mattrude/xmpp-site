@@ -12,7 +12,7 @@
 
 - name: Rosters
   section: history
-  text: 
+  text: The roster allows users to keep and manage a contact list or addressbook.  Any modifications made by a user to their roster is shared between all clients but some clients may need to log out and back in or manually request the updated roster before the changes are displayed.
 
 - name: Message Carbons
   section: history

@@ -4,7 +4,7 @@ title: Privacy Policy
 permalink: /privacy-policy/
 ---
 
-# Privacy Policy
+<div class="section-headder" id="{{ section.slug }}"><center><span class="fa fa-book" style="font-size:80px;" aria-hidden="true"></span><h1>Privacy Policy</h1></center></div>
 
 Our general policy regarding your data is to save as much as needed and as little as possible. This document will try to explain what personal data we store and how we handle that.
 

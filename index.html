@@ -16,6 +16,7 @@ permalink: /
 </div>
 
 <div class="container offsetanchor" id="opening">
+    <div class="col-md-7">
     <p>This is the <strong>{{ site.name }}</strong> communication service website.  This site is here to provide basic
     information on using this service.  A <a href="{{ site.url }}/help/definitions/#xmpp-server">XMPP</a>
     service provides messaging ability via a local client.  XMPP sites like this service are
@@ -30,24 +31,40 @@ permalink: /
     may be used.  My personal preferred clients are <a href="https://gajim.org/">Gajim</a> or
     <a href="http://swift.im/">Swift</a> for desktop/laptops and <a href="https://conversations.im/">Conversations</a>
     or <a href="https://guardianproject.info/apps/chatsecure/">ChatSecure</a> for mobile.</p>
+    </div>
+
+    <div class="col-md-5">
+    <h1>Connecting</h1>
+    <ul>
+        <li>XMPP Port: <b>5222</b></li>
+        <li>Hostname: <b>{{ site.xmpp-url }}</b></li>
+        <li>Server Name: <b>{{ site.xmpp-host }}</b></li>{% if site.xmpp-conference-url and site.xep-0045 == 1 %}
+        <li>Conference Rooms: <b>{{ site.xmpp-conference-url }}</b></li>{% endif %}{% if site.xmpp-proxy-url and site.xep-0065 == 1 %}
+        <li>Socks 5 Proxy: <b>{{ site.xmpp-proxy-url }}</b></li>{% endif %}{% if site.xmpp-upload-url and site.xep-0363 == 1 %}
+        <li>File Uploads: <b>{{ site.xmpp-upload-url }}</b></li>{% endif %}
+    </div>
 </div>
 
-<div class="container offsetanchor" id="features">
+<div id="features">
     {% for section in site.data.sections %}
-    <div class="row">
-        <div class="section-headder" id="{{ section.slug }}"><center>
-            <span class="glyphicon {{ section.glyph }}" style="font-size:60px;" aria-hidden="true"></span>
-            <h2>{{ section.name }}</h2>
-        </center></div>
-        <div class="feature-{{ section.slug }}">
-        {% for feature in site.data.features %}
-        {% if feature.section == section.slug %}
-        <div class="col-md-4" style="min-height:280px;">
-            <h3>{{ feature.name }}</h3>
-            <p>{{ feature.text }}</p>
-        </div>
-        {% endif %}
-        {% endfor %}
+    <div id="feature-{{ section.slug }}" style="background-color:#{{ section.color }};">
+        <div class="container offsetanchor">
+            <div class="row">
+                <div class="section-headder" id="{{ section.slug }}"><center>
+                    <span class="glyphicon {{ section.glyph }}" style="font-size:60px;" aria-hidden="true"></span>
+                    <h2>{{ section.name }}</h2>
+                </center></div>
+                <div class="feature-{{ section.slug }}">
+                    {% for feature in site.data.features %}
+                    {% if feature.section == section.slug %}
+                    <div class="col-md-4" style="min-height:280px;">
+                        <h3>{{ feature.name }}</h3>
+                        <p>{{ feature.text }}</p>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
     {% endfor %}

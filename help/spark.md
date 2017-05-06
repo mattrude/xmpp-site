@@ -21,7 +21,7 @@ Spark is an Open Source, cross-platform IM client optimized for businesses and o
 - The server/domain is the 
 
 
-## Updating your profile
+## Updating your Profile
 
 ## Adding a Contact
 
@@ -35,4 +35,21 @@ In particular, you can add people who chat using Spark or an application like it
 
 If you decide you'd rather have the contact in another group, simply right-click their name, point to **Move to**, then click the name of the group you want to move them to.
 
+## Changing your Status
 
+## Sending Messages
+
+## Sending a File to a Single User
+
+## Using a Group Conference
+
+### Sending a File to a Conference
+
+## Pro-Tips
+
+* Press **Ctrl+F** (while in the contacts or chat window) and start filling the name. It will automatically filter out from all of your contacts. This is a fast way to find a contact in a huge roster.
+* Press **Ctrl+T** (only works in a roster window) - it will show frequent contacts, the people you chat most with.
+* Press **Ctrl+E** (only works in a roster window) - it will show a list of users you had conversations with recently. A quick way to find whom you were talking with recently, if you can't remember the name.
+* Pressing **Ctrl+Space** after you enter a few characters of someone's name in the group chat will complete the name automatically.
+ 
+If a contact you want to talk to is Away (or even Offline) and you want to know right away when he is available. Right-click such contact and select Alert when user is available. Spark will open a chat windows with that contact once he gets Online. Note: Spark will remember this task only until it is turned off.
