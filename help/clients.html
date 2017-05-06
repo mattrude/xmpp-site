@@ -1,0 +1,32 @@
+---
+layout: default
+title: XMPP Client List
+permalink: /help/clients/
+---
+
+<h1>XMPP Client List</h1>
+
+<div class="container offsetanchor" id="clients">
+    {% for type in site.data.clienttypes %}
+    <div class="row">
+        <center><h2>{{ type.name }}</h2></center>
+        <div class="client-{{ type.slug }}">
+            {% for client in site.data.clients %}
+            {% if client.type == type.slug %}
+            <div class="col-md-4" style="min-height:280px;">
+                {% if client.img %}
+                <center><img src="{{ site.url }}/img/clients/{{ client.img }}" height="80px" /></center>
+                {% endif %}
+                <center><h3>{{ client.name }}</h3></center>
+                <ul class="list-group">
+                    <li class="list-group-item"><b>Platform:</b> {{ client.platform }}</li>
+                    <li class="list-group-item"><b>Website:</b> <a href="{{ client.url }}">{{ client.domain }}</a></li>
+                    {% if client.text %}<li class="list-group-item">{{ client.text }}</li>{% endif %}
+                </ul>
+            </div><!-- end class col-md-4 -->
+            {% endif %}
+            {% endfor %}
+        </div><!-- end class client-{{ type.slug }} -->
+    </div><!-- end class row -->
+    {% endfor %}
+</div><!-- end id clients -->

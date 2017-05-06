@@ -1,0 +1,11 @@
+- name: Archiving/Storage
+  slug: history
+  glyph: glyphicon-floppy-disk
+
+- name: File Sharing
+  slug: file
+  glyph: glyphicon-cloud-download
+
+- name: Mobile
+  slug: mobile
+  glyph: glyphicon-phone

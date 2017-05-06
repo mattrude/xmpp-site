@@ -7,7 +7,7 @@ permalink: /help/using-conferences/
 {% if site.xmpp-conference-url and site.xep-0045 == 1 %}
 # Conferences
 
-XMPP is normally a single person to single person chat system, but it has the ability to also run conference rooms.  A conference room or MUC (Multiple User Chat) allows users on the same server, or via federation, different servers or domains, to all connect to the same chat room.  Similar to how IRC works.
+XMPP is normally a single person to single person chat system, but it has the ability to also run conference rooms.  A conference room or MUC (Multiple User Chat) allows users on the same server, or via [federation]({{ site.url }}/help/definitions/#federation), different servers or domains, to all connect to the same chat room.  Similar to how IRC works.
 
 ## Connecting from a federated XMPP server
 
