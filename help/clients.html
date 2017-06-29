@@ -20,6 +20,7 @@ permalink: /help/clients/
                 <center><h3>{{ client.name }}</h3></center>
                 <ul class="list-group">
                     <li class="list-group-item"><b>Platform:</b> {{ client.platform }}</li>
+                    <li class="list-group-item"><b>Encryption:</b> {{ client.encryption }}</li>
                     <li class="list-group-item"><b>Website:</b> <a href="{{ client.url }}">{{ client.domain }}</a></li>
                     {% if client.text %}<li class="list-group-item">{{ client.text }}</li>{% endif %}
                 </ul>

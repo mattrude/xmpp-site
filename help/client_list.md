@@ -6,7 +6,7 @@ permalink: /help/client-list/
 
 Below is an incomplete list of avalable clients for XMPP services.
 
-<table>
+<table class='table'>
 <thead>
 <tr>
 <th>Name</th>

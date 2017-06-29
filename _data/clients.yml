@@ -1,6 +1,7 @@
 - name: Conversations
   type: mobile
   platform: Mobile (Android)
+  encryption: TLS, OMEMO, OTR
   domain: conversations.im
   url: https://conversations.im/
   img: conversations_logo.png
@@ -9,14 +10,25 @@
 - name: ChatSecure
   type: mobile
   platform: Mobile (iOS)
-  domain: guardianproject.info
-  url: https://guardianproject.info/apps/chatsecure/
+  encryption: TLS, OMEMO, OTR
+  domain: chatsecure.org
+  url: https://chatsecure.org/
   img: chatsecure_logo.png
   text: ChatSecure is a free and open source messaging app that features OTR encryption over XMPP. 
+
+- name: Xabber
+  type: mobile
+  platform: Mobile (Android)
+  encryption: TLS, OTR
+  domain: xabber.com
+  url: https://www.xabber.com/
+  img: xabber_logo.png
+  text: Xabber is the most popular open-source XMPP client for Android. It supports multiple XEPs, Off-The-Record (OTR) chat encryption and is available in multiple languages.
 
 - name: Gajim
   type: desktop
   platform: Linux / Windows
+  encryption: TLS, OMEMO, OTR
   domain: gajim.org
   url: https://gajim.org/
   img: gajim_logo.png
@@ -25,6 +37,7 @@
 - name: Swift
   type: desktop
   platform: Linux / OSX / Windows
+  encryption: TLS
   domain: swift.im
   url: http://swift.im/
   img: swift_logo.svg
@@ -34,6 +47,7 @@
 - name: Psi
   type: desktop
   platform: Linux / OSX / Windows
+  encryption: TLS
   domain: psi-im.org
   url: http://psi-im.org/
   img: psi_logo.png
@@ -42,6 +56,7 @@
 - name: Messages
   type: desktop
   platform: OSX
+  encryption: TLS
   domain: apple.com
   url: http://www.apple.com/osx/whats-new/features.html#messages
   img: messages_logo.png
@@ -50,6 +65,7 @@
 - name: Spark
   type: desktop
   platform: Linux / OSX / Windows
+  encryption: TLS, OTR
   domain: igniterealtime.org
   url: http://igniterealtime.org/projects/spark/index.jsp
   img: spark_logo.png
@@ -58,6 +74,7 @@
 - name: Profanity
   type: server
   platform: 	Console / Text-Mode
+  encryption: TLS, OTR
   domain: profanity.im
   url: http://profanity.im/
   text: Profanity is a console based XMPP client written in C using ncurses and libstrophe, inspired by Irssi

@@ -6,7 +6,7 @@ permalink: /doc/supported-standards/
 
 This service is running [Prosody]({{ site.url }}/doc/definitions/#prosody) version {{ site.prosody-version }} and supports the following XMPP standards.
 
-<table>
+<table class='table'>
 	<thead>
 	<tr class="row0">
 		<th class="col0 leftalign">XMPP Standard    </th><th class="col1">Status </th>

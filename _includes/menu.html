@@ -1,32 +1,30 @@
-{% if page.url == "/" %}
-  <nav id="mainNav" class="navbar-inverse navbar navbar-fixed-top affix-top">{% else %}
-  <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top affix-top">{% endif %}
+<nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top affix-top">
     <div class="container">
-    <div class="row">
-      <div class="navbar-header">
-        <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="{{ site.url }}">XMPP Communication Service</a>
-      </div>
-          <div class="navbar-collapse collapse" id="navbar">
-          {% if page.url == "/" %}
-            <ul class="nav navbar-nav">
-          {% for section in site.data.frontpage %}
-          <li>
-            <a href="#{{ section.slug }}">{{ section.name }}</a>
-          </li>
-          {% endfor %}
-            </ul>
-          {% endif %}
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{ site.url }}/help/">User Guides</a></li>
-                <li><a href="{{ site.url }}/certificates/">Certificates</a></li>
-            </ul>
+        <div class="row">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ site.url }}">XMPP Communication Service</a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+<!--
+                {% if page.url == "/" %}
+                <ul class="nav navbar-nav">
+                    {% for section in site.data.sections %}
+                    <li><a href="#{{ section.slug }}">{{ section.name }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{ site.url }}/help/">User Guides</a></li>
+                    <li><a href="{{ site.url }}/certificates/">Certificates</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    </div>
-  </nav>
+</nav>

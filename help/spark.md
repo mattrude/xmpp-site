@@ -10,16 +10,18 @@ Spark is an Open Source, cross-platform IM client optimized for businesses and o
 
 ## Downloading and Installing Spark
 
-## Logging into Spark for the first time
+## Logging into Spark
 
 <img style="float: right;" src="{{ site.url }}/img/guides/spark/spark-login-screen.png">
 
+Logging into Spark is just like logging into anyother program.  You should have been provided with a <b>JID</b> and a <b>Password</b>.
+
 1. Start Spark.
-2. Enter your login information, then click Login.
+2. Enter your login information:
 - Your **username** is the uniq part of your JID, left of the `@`.
 - The password that was provided to you.
-- The server/domain is the 
-
+- The **Domain** is the right part after the `@` in your JID.
+3. Once complete, click **Login**.
 
 ## Updating your Profile
 
