@@ -11,3 +11,12 @@ td.FAILED {
     color: white;
 }
 
+.h1, .h2, .h3, h1, h2, h3 {
+/*    padding-top: 60px; */
+}
+
+@media (max-width: 968px) {
+      .pull-right, .pull-left {
+              text-align: center;
+       } 
+    }

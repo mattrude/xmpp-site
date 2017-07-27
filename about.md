@@ -8,7 +8,7 @@ permalink: /about/
 
 ## This Service
 
-An XMPP server provides basic messaging, [presence]({{ site.url }}/help/definitions/#presence), and XML routing features. This page lists Jabber/XMPP server software that you can use to run your own XMPP service, either over the Internet or on a local area network.
+This server provides instant messaging service, via the XMPP protocol, to users with an account on this domain. An XMPP server provides basic messaging, [presence]({{ site.url }}/help/definitions/#presence), and XML routing features.
 
 This site is running [prosody](https://prosody.im) version {{ site.prosody-version }} on [Ubuntu](http://www.ubuntu.com/) version 16.04 LTS..  The source for prosody may be found at [hg.prosody.im](https://hg.prosody.im/). The program prosody is licensed under the [MIT/X11 license](https://prosody.im/source/mit).
 

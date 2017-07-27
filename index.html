@@ -36,8 +36,8 @@ permalink: /
     <div class="col-md-5">
     <h1>Connecting</h1>
     <ul>
-        <li>XMPP Port: <b>5222</b></li>
-        <li>Hostname: <b>{{ site.xmpp-url }}</b></li>
+        <li>Port: <b>5222</b></li>
+        <li>Domain: <b>{{ site.xmpp-url }}</b></li>
         <li>Server Name: <b>{{ site.xmpp-host }}</b></li>{% if site.xmpp-conference-url and site.xep-0045 == 1 %}
         <li>Conference Rooms: <b>{{ site.xmpp-conference-url }}</b></li>{% endif %}{% if site.xmpp-proxy-url and site.xep-0065 == 1 %}
         <li>Socks 5 Proxy: <b>{{ site.xmpp-proxy-url }}</b></li>{% endif %}{% if site.xmpp-upload-url and site.xep-0363 == 1 %}

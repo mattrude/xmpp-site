@@ -51,6 +51,8 @@ A users unique [XMPP](#xmpp-server) address, is called a JID (or for historical 
 
 ## LAN
 
+## OTR
+
 ## Presence
 A users [XMPP](#xmpp-server) presence indicates if a users is **online**, **away**, or **offline**.
 
