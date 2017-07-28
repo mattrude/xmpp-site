@@ -48,3 +48,5 @@ jekyll-press:
   js_options: {}      # js minifier options
   css_options: {}     # css minifier options
   html_options: {}    # html minifier options
+
+theme: jekyll-theme-modernist
