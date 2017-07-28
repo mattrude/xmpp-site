@@ -32,18 +32,21 @@ xep-0357: 1 # Push Notifications
 xep-0375: 1 # XMPP protocol compliance levels for 2016
 
 fingerprints: 1
-fingerprint-expires: "Jul 24 01:13:00 2017 GMT"
-fingerprint-conference-expires: "Aug  2 02:40:00 2017 GMT"
-fingerprint-proxy-expires: "Aug  2 02:40:00 2017 GMT"
-fingerprint-upload-expires: "Aug  2 02:40:00 2017 GMT"
-fingerprint-sha1: "2C:23:33:2A:CB:E2:B8:37:C7:43:D1:58:CF:4F:E3:5D:48:CB:1F:F7"
-fingerprint-sha256: "B1:80:58:73:17:7C:5B:32:AB:86:9D:D1:21:62:E8:7B:00:70:8A:99:2A:A0:1E:E1:FC:FF:21:23:C7:EF:F5:3B"
-fingerprint-conference-sha1: "BF:0C:47:3D:ED:C3:92:95:A8:86:B8:50:EB:21:4F:A7:A0:C5:D7:D0"
-fingerprint-conference-sha256: "DF:71:7A:69:8E:10:34:AB:6B:CE:02:EC:41:CF:AE:0A:F8:B2:B4:D9:7D:58:7D:A8:7C:BA:F9:3B:50:FF:02:0F"
-fingerprint-proxy-sha1: "BF:0C:47:3D:ED:C3:92:95:A8:86:B8:50:EB:21:4F:A7:A0:C5:D7:D0"
-fingerprint-proxy-sha256: "DF:71:7A:69:8E:10:34:AB:6B:CE:02:EC:41:CF:AE:0A:F8:B2:B4:D9:7D:58:7D:A8:7C:BA:F9:3B:50:FF:02:0F"
-fingerprint-upload-sha1: "BF:0C:47:3D:ED:C3:92:95:A8:86:B8:50:EB:21:4F:A7:A0:C5:D7:D0"
-fingerprint-upload-sha256: "DF:71:7A:69:8E:10:34:AB:6B:CE:02:EC:41:CF:AE:0A:F8:B2:B4:D9:7D:58:7D:A8:7C:BA:F9:3B:50:FF:02:0F"
+fingerprint-expires: "Sep 23 00:01:00 2017 GMT"
+fingerprint-im-expires: "Oct  1 06:08:00 2017 GMT"
+fingerprint-conference-expires: "Oct  1 06:08:00 2017 GMT"
+fingerprint-proxy-expires: "Oct  1 06:08:00 2017 GMT"
+fingerprint-upload-expires: "Oct  1 06:08:00 2017 GMT"
+fingerprint-sha1: "82:C5:78:0A:E3:23:BE:47:43:E6:B3:7B:7A:63:A3:34:98:98:CA:F5"
+fingerprint-sha256: "0E:76:CB:50:2F:55:D1:7F:E5:A5:E4:15:41:E4:A5:A1:A4:96:CE:0E:9F:D8:29:1D:55:D9:36:F3:52:5A:C6:A4"
+fingerprint-im-sha1: "4B:06:4B:69:C2:CF:C2:93:9C:10:33:7A:F7:1C:63:95:48:3C:E1:DE"
+fingerprint-im-sha256: "03:15:EE:9F:F5:FF:B4:22:64:A2:82:69:2D:EB:FA:60:45:FE:F3:13:B1:5F:08:A9:8E:22:DE:91:FE:B0:B2:DF"
+fingerprint-conference-sha1: "4B:06:4B:69:C2:CF:C2:93:9C:10:33:7A:F7:1C:63:95:48:3C:E1:DE"
+fingerprint-conference-sha256: "03:15:EE:9F:F5:FF:B4:22:64:A2:82:69:2D:EB:FA:60:45:FE:F3:13:B1:5F:08:A9:8E:22:DE:91:FE:B0:B2:DF"
+fingerprint-proxy-sha1: "4B:06:4B:69:C2:CF:C2:93:9C:10:33:7A:F7:1C:63:95:48:3C:E1:DE"
+fingerprint-proxy-sha256: "03:15:EE:9F:F5:FF:B4:22:64:A2:82:69:2D:EB:FA:60:45:FE:F3:13:B1:5F:08:A9:8E:22:DE:91:FE:B0:B2:DF"
+fingerprint-upload-sha1: "4B:06:4B:69:C2:CF:C2:93:9C:10:33:7A:F7:1C:63:95:48:3C:E1:DE"
+fingerprint-upload-sha256: "03:15:EE:9F:F5:FF:B4:22:64:A2:82:69:2D:EB:FA:60:45:FE:F3:13:B1:5F:08:A9:8E:22:DE:91:FE:B0:B2:DF"
 
 # Analytics settings
 #google_analytics_id: UA-9532791-9
@@ -66,12 +69,13 @@ exclude:
 
 gems:
 - jekyll-sitemap
+- jekyll-less
 - jekyll-press
+#- jekyll-redirect-from
+#- jekyll-last-modified-at
 
 jekyll-press:
   exclude: 'robots.txt, contact.txt, contact-ecc.txt' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
   js_options: {}      # js minifier options
   css_options: {}     # css minifier options
   html_options: {}    # html minifier options
-
-theme: jekyll-theme-modernist
