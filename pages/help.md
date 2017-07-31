@@ -4,7 +4,9 @@ title: Help
 permalink: /help/
 ---
 
-<center><span class="fa fa-question-circle" style="font-size:60px;" aria-hidden="true"></span><h1>User Guides</h1></center>
+<div class="section-headder">
+  <center><span class="fa fa-question-circle" style="font-size:60px;" aria-hidden="true"></span><h1>User Guides</h1></center>
+</div>
 
 <div class="col-md-4">
 <h2>Client Guides</h2>
@@ -22,7 +24,7 @@ permalink: /help/
 <ul>
 <li><a href="{{ site.url }}/help/clients/">Client List</a></li>
 <li><a href="{{ site.url }}/help/definitions/">Definitions</a></li>
-<li><a href="{{ site.url }}/help/generic-configuration/">Generic Configuration</a></li>{% if site.xmpp-conference-url and site.xep-0045 == 1 %}
+<li><a href="{{ site.url }}/help/generic-configuration/">Generic Configuration</a></li>{% if site.xmpp-conference-url %}
 <li><a href="{{ site.url }}/help/using-conferences/">Using Conferences</a></li>{% endif %}
 <li><a href="{{ site.url }}/help/web-presence/">Using Web Presence</a></li>
 <li><a href="{{ site.url }}/help/hal-robot/">Using HAL Bot</a></li>
