@@ -6,7 +6,7 @@ permalink: /
 
 <div class="jumbotron" style="padding-top:90px;">
     <div class="container">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-4">
             <img src="{{ site.url }}/img/xmpp_logo.png" width="233px;" height="240px;">
         </div>
         <div class="col-md-8" style="text-align:right;">
@@ -16,7 +16,7 @@ permalink: /
 </div>
 
 <div class="container offsetanchor" id="opening">
-    <div class="col-md-7">
+    <div class="col-md-7 col-sm-6">
     <p>This is the <strong>{{ site.name }}</strong> communication service website.  This site is here to provide basic
     information on using this service.  A <a href="{{ site.url }}/help/definitions/#xmpp-server">XMPP</a>
     service provides messaging ability via a local client.  XMPP sites like this service are
@@ -33,7 +33,7 @@ permalink: /
     or <a href="https://chatsecure.org/">ChatSecure</a> for mobile.</p>
     </div>
 
-    <div class="col-md-5">
+    <div class="col-md-5 col-sm-6">
     <h1>Connecting...</h1>
     <ul>
         <li>Port: <b>5222</b></li>
@@ -57,7 +57,7 @@ permalink: /
                 <div class="feature-{{ section.slug }}">
                     {% for feature in site.data.features %}
                     {% if feature.section == section.slug %}
-                    <div class="col-md-4" style="min-height:280px;">
+                    <div class="col-md-4 col-sm-6" style="min-height:280px;">
                         <h3>{{ feature.name }}</h3>
                         <p>{{ feature.text }}</p>
                     </div>
