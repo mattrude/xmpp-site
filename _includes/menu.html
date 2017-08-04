@@ -1,22 +1,30 @@
-<div id="menu">
-    <a href="{{ site.url }}">Home</a>
-    | <a href="{{ site.url }}/about/">About</a>
-    | <a href="{{ site.url }}/certificates/">Certificates</a>
-    | <a href="{{ site.url }}/help/">Help</a>
-    | <a href="{{ site.url }}/doc/">Docs</a>{% for post in site.posts limit: 1 %}
-    | <a href="{{ site.url }}/news/">News</a>{% endfor %}
-</div>{% if page.url contains 'doc' %}
-<div id="menu-sub">
-    <a href="{{ site.url }}/doc/"><strong>Docs:</strong></a> | 
-    <a href="{{ site.url }}/doc/supported-standards/">Supported Standards</a> | 
-    <a href="{{ site.url }}/doc/compliance/">Server Compliance</a>
-</div>{% endif %}{% if page.url contains 'help' %}
-<div id="menu-sub">
-    <a href="{{ site.url }}/help/"><strong>Help:</strong></a> |
-    <a href="{{ site.url }}/help/client-list/">Clients list</a> | 
-    <a href="{{ site.url }}/help/definitions/">Definitions</a> | 
-    <a href="{{ site.url }}/help/generic-configuration/">Generic Configuration</a> | {% if site.xmpp-conference-url and site.xep-0045 == 1 %}
-    <a href="{{ site.url }}/help/using-conferences/">Conferences</a> | {% endif %}
-    <a href="{{ site.url }}/help/web-presence/">Web Presence</a> |
-    <a href="{{ site.url }}/help/hal-robot/">HAL Bot</a>
-</div>{% endif %}
+<nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top affix-top">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ site.url }}">XMPP Communication Service</a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+<!--
+                {% if page.url == "/" %}
+                <ul class="nav navbar-nav">
+                    {% for section in site.data.sections %}
+                    <li><a href="#{{ section.slug }}">{{ section.name }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{ site.url }}/help/">User Guides</a></li>
+                    <li><a href="{{ site.url }}/certificates/">Certificates</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

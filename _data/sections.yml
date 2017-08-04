@@ -1,0 +1,13 @@
+- name: Archiving/Storage
+  slug: history
+  glyph: glyphicon-floppy-disk
+  color: 9FCF6C
+
+- name: File Sharing
+  slug: file
+  glyph: glyphicon-cloud-download
+
+- name: Mobile
+  slug: mobile
+  glyph: glyphicon-phone
+  color: E66E20
