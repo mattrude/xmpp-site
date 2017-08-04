@@ -6,6 +6,10 @@
   section: history
   text: It is a common desire for users of XMPP to want to store their messages in a central archive on their server. This feature allows them to record conversations that take place on clients that do not support local history storage, to synchronise conversation history seamlessly between multiple clients, to read the history of a MUC room, or to view old items in a pubsub node.
 
+- name: Message Carbons
+  section: history
+  text: Message Carbons allow users to maintain a shared and synchronized view of all conversations across all their online clients and devices.
+
 - name: vCards
   section: history
   text: vCards are a online version of a business card, as implemented in <a href="http://xmpp.org/extensions/xep-0054.html">XEP-0054</a>. Users are not required to fill in a vCard and can supply as much or as little as they like.
@@ -13,10 +17,6 @@
 - name: Rosters
   section: history
   text: The roster allows users to keep and manage a contact list or addressbook.  Any modifications made by a user to their roster is shared between all clients but some clients may need to log out and back in or manually request the updated roster before the changes are displayed.
-
-- name: Message Carbons
-  section: history
-  text: Message Carbons allow users to maintain a shared and synchronized view of all conversations across all their online clients and devices.
 
 - name: Personal Eventing Protocal
   section: history
