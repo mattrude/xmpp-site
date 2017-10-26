@@ -2,12 +2,15 @@
   slug: history
   glyph: glyphicon-floppy-disk
   color: 9FCF6C
+  col: 3
 
 - name: File Sharing
   slug: file
   glyph: glyphicon-cloud-download
+  col: 2
 
 - name: Mobile
   slug: mobile
   glyph: glyphicon-phone
   color: E66E20
+  col: 3

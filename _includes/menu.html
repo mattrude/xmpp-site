@@ -1,3 +1,4 @@
+<div class="wrapper">
 <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top affix-top">
     <div class="container">
         <div class="row">
@@ -21,7 +22,8 @@
                 {% endif %}
 -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{ site.url }}/help/">User Guides</a></li>
+                    <li><a href="{{ site.url }}/help/">User Guides</a></li>{% if site.register-web == 1 %}
+                    <li><a href="{{ site.url }}/register/">Register</a></li>{% endif %}
                     <li><a href="{{ site.url }}/certificates/">Certificates</a></li>
                 </ul>
             </div>

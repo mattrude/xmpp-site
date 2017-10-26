@@ -45,6 +45,14 @@ permalink: /
     </div>
 </div>
 
+{% if site.register-web == 1 %}
+<div id="register">
+    <div id="feature-register" style="background-color:#eee;">
+         {% include registration.html %}
+    </div>
+</div>
+{% endif %}
+
 <div id="features">
     {% for section in site.data.sections %}
     <div id="feature-{{ section.slug }}" style="background-color:#{{ section.color }};">
