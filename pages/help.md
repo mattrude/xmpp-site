@@ -24,7 +24,8 @@ permalink: /help/
 <ul>
 <li><a href="{{ site.url }}/help/clients/">Client List</a></li>
 <li><a href="{{ site.url }}/help/definitions/">Definitions</a></li>
-<li><a href="{{ site.url }}/help/generic-configuration/">Generic Configuration</a></li>{% if site.xmpp-conference-url %}
+<li><a href="{{ site.url }}/help/generic-configuration/">Generic Configuration</a></li>
+<li><a href="{{ site.url }}/help/creating-a-new-account/">Creating a new account</a></li>{% if site.xmpp-conference-url %}
 <li><a href="{{ site.url }}/help/using-conferences/">Using Conferences</a></li>{% endif %}
 <li><a href="{{ site.url }}/help/web-presence/">Using Web Presence</a></li>
 <li><a href="{{ site.url }}/help/hal-robot/">Using HAL Bot</a></li>
