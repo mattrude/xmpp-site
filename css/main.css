@@ -17,7 +17,10 @@ body {
 .section-headder {
     padding: 60px 0 10px;
 }
-
+#contact-list {
+  font-size:2em;
+  text-align: center;
+}
 td.PASSED {
     background-color: green;
     color: white;
