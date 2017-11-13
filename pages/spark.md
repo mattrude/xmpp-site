@@ -14,7 +14,7 @@ Spark is an Open Source, cross-platform IM client optimized for businesses and o
 
 ## Logging into Spark
 
-<img style="float: right;" src="{{ site.url }}/img/guides/spark/spark-login-screen.png">
+<img style="float: right;" src="{{ site.url }}/assets/img/guides/spark/spark-login-screen.png">
 
 Logging into Spark is just like logging into anyother program.  You should have been provided with a <b>JID</b> and a <b>Password</b>.
 

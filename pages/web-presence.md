@@ -14,12 +14,12 @@ To use web presence, just add the below image url to a site or email.  The useri
 
     <img src="{{ site.url }}/status/userid" />
 
-* ![online]({{ site.url }}/img/status_online.png) - User's current status is **online**
-* ![status-chat]({{ site.url }}/img/status_chat.png) - User's current status is **free to chat**
-* ![status-away]({{ site.url }}/img/status_away.png) - User's current status is **away**
-* ![status-xa]({{ site.url }}/img/status_xa.png) - User's current status is **extended away**
-* ![status-dnd]({{ site.url }}/img/status_dnd.png) - User's current status is **dnd** (do not disturb)
-* ![offline]({{ site.url }}/img/status_offline.png) - User's current status is **offline**
+* ![online]({{ site.url }}/assets/img/status_online.png) - User's current status is **online**
+* ![status-chat]({{ site.url }}/assets/img/status_chat.png) - User's current status is **free to chat**
+* ![status-away]({{ site.url }}/assets/img/status_away.png) - User's current status is **away**
+* ![status-xa]({{ site.url }}/assets/img/status_xa.png) - User's current status is **extended away**
+* ![status-dnd]({{ site.url }}/assets/img/status_dnd.png) - User's current status is **dnd** (do not disturb)
+* ![offline]({{ site.url }}/assets/img/status_offline.png) - User's current status is **offline**
 
 ### Web Presence Status text
 

@@ -25,7 +25,7 @@ permalink: /contact/
                 <li><b><a href="https://keyserver.mattrude.com/search/vindex/hash/fingerprint/0xc4909ee495b0761f" title="PGP Public Key"><i class="fa fa-key"></i></a></b></li>
             </ul>
         </div>
-        <div class="col-md-7 pull-right">
+        <div class="col-md-7">
             <h3 id="my-public-pgp-key-information">My Public PGP Key Information</h3>
             <p><strong>My Default RSA Key:</strong></p>
             <div class="highlighter-rouge">
@@ -46,7 +46,7 @@ fingerprint = 77F1 D65B 5FF0 54DC 9286  6078 0314 CD85 0330 5F35</code></pre>
     <h3 id="signed-contact-information">Signed Contact Information</h3>
     <p>A signed copy of this information may be found <a href="https://im.mattrude.com/contact.txt">here</a>, or using my <a href="https://keyserver.mattrude.com/d/0x0314CD8503305F35">ECC key</a>, may be found <a href="https://im.mattrude.com/contact-ecc.txt">here</a>. You may validate these files by running the below commands:</p>
     <div class="highlighter-rouge">
-        <pre class="highlight"><code>curl -s https://im.mattrude.com/contact.txt |gpg --keyserver-options auto-key-retrieve --auto-key-locate pka --verify
+        <pre class="highlight"><code style="overflow:auto;word-wrap:normal;white-space:pre;">curl -s https://im.mattrude.com/contact.txt |gpg --keyserver-options auto-key-retrieve --auto-key-locate pka --verify
 curl -s https://im.mattrude.com/contact-ecc.txt |gpg --keyserver-options auto-key-retrieve --auto-key-locate pka --verify
 </code></pre>
     </div>

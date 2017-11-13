@@ -4,7 +4,7 @@ title: Conversations User Guide
 permalink: /help/conversations/
 ---
 
-<center><img src="/img/clients/conversations_logo.png" alt="Conversations Logo" height="128px" width="128px"><h1>Conversations User Guide</h1></center>
+<center><img src="/assets/img/clients/conversations_logo.png" alt="Conversations Logo" height="128px" width="128px"><h1>Conversations User Guide</h1></center>
 
 ## Overview
 
