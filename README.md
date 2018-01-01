@@ -1,5 +1,7 @@
 # Communication Service Website Source
 
+[![GitHub license](https://img.shields.io/github/license/mattrude/xmpp-site.svg)](https://github.com/mattrude/xmpp-site/blob/master/LICENSE) [![Open Issues](https://img.shields.io/github/issues-raw/mattrude/xmpp-site.svg)](https://github.com/mattrude/xmpp-site/issues) [![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)](http://github.com/mattrude/xmpp-site)
+
 This is the website for [Matt Rude](https://mattrude.com)'s XMPP service.  This site may be loaded via the [xmpp-site-builder](https://code.mattrude.com/xmpp-site-builder/) repository.
 
 ## Jekyll
