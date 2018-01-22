@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: definitions
 title: XMPP Definitions
 permalink: /help/definitions/
 ---
+
+# XMPP Definitions
 
 ## BOSH
 <b>B</b>idirectional-streams <b>O</b>ver <b>S</b>ynchronous <b>H</b>TTP (BOSH) used to transport XMPP [stanzas](#stanza).  The result is an HTTP binding for XMPP communications that is useful in situations where a device or client is unable to maintain a long-lived [TCP](#tcp) connection to an XMPP server.
@@ -77,3 +79,4 @@ An XMPP server provides basic messaging, [presence](#presence), and XML routing 
 
 ## XML
 E<b>X</b>tensible <b>M</b>arkup <b>L</b>anguage (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.  XML is the format that messages are sent/received in when communication with XMPP (See [XML](https://en.wikipedia.org/wiki/XML)).
+</div>

@@ -15,6 +15,7 @@ websites, social media profiles, and PGP public keys and fingerprints.
 * Website: https://mattrude.com
 * Keyserver: https://keyserver.mattrude.com
 * Personal wiki: https://wiki.mattrude.com
+* XMPP IM Server: https://im.mattrue.com
 
 ## Social Media Profile
 
@@ -26,38 +27,53 @@ websites, social media profiles, and PGP public keys and fingerprints.
 
 ## Public Keys
 
-XMPP OMEMO Public fingerprints:
+You may use the below public keys for secure end-to-end encryption,
+depending on the system you are using.  Use one of the OpenPGP keys for
+email comunication, and one of the OMEMO keys for XMPP Instant Messaging.
+
+### XMPP OMEMO Public fingerprints:
  
+Phone (Primary) (2017-06-07)
+
     2211712a f24bfcaa 3c078673 e493ce03
     2b8bb3df 8e6d727d 813b5234 f148b219
+
+Tablet (2017-07-08)
 
     a4b88aca f63e1f05 6f8fd700 7847baf3
     3f653098 64d478a7 d7387c88 fd8fb834
 
+Laptop (2016-12-02)
+
     776DCE9B 34AFFC32 4E5CACAA D6AA7DBC
     A9DF8BF4 E3D6C4FC 188850EC 0D9EC30B
 
-RSA OpenPGP Key information:
+### OpenPGP Keys for email:
+
+Both email address; matt@mattrude.com & m@mattrude.com,
+go to the same place.
+
+#### RSA OpenPGP Key information
 
     uid = Matt Rude <matt@mattrude.com>
     pub = rsa2048/95B0761F 2015-03-02
     sub = rsa2048/BC158061 2015-03-02
     fingerprint = 71FD 20E3 2815 8C32 2133  FBBE C490 9EE4 95B0 761F
 
-ECC OpenPGP Key information:
+#### ECC OpenPGP Key information
 
     uid = Matt Rude <m@mattrude.com>
     pub = nistp256/03305F35 2015-02-15
     fingerprint = 77F1 D65B 5FF0 54DC 9286  6078 0314 CD85 0330 5F35
 
 -----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2
 
-iQEzBAEBCAAdFiEEcf0g4ygVjDIhM/u+xJCe5JWwdh8FAlk+6GgACgkQxJCe5JWw
-dh9U1Qf+ObUAik7hKd/6uoUMzj0b+58L1boUMaxrXiQrIrX8Zd142fuR6ZoHXLro
-0VEMtsVxIhqvEikQTEYNCxv8nyQQGX1Xhsn8Xdkumnm/v2HoV3FsuEt9B3XeHFXH
-232H5KM0lyK/a9miFDDgOOwDgyeWB2Ax1mtWnE0wHgmH9kranknm3Vu3TIK809Jp
-uO+rMTh59gRovRUmtOt06Bog7Up1YQ6d+KImUsw3rjMZJ0Vdd5vUsnYiSfb858Sl
-r8TfKPMJ0g1ZJB8tDv1CnVXA8Z9uiSyKp4Rmm4CtuzfbEggi/WDKj5JlJExJKOMc
-iq69Ke9F3WNE3Q/eQiJ7dmb4ipFLDA==
-=e5wW
+iQEcBAEBCAAGBQJaStFEAAoJEMSQnuSVsHYfOG0IAKQktaKBn2+qp1GDrD0KkW9Z
+UQPqymZbnbJd2Bk/Qce7OsQJmSS4A4DmUQIP91k8ajmSqpVY+c9XRXO7dAbhA3tm
+pH7FuYpbZQpKmBjKc7Q4+gGVwxqwWQ47tLI7syIJC52vnWKxU2Sp5czWxe7/G0A1
+pqQtzxlApxdVa0xaKPV/mP9XfDxVIqdT7/W/Glo4pqGFDWTt32SoNxp5zlygANKe
+XnLvyHc1RZKLy+7eW0fsAo0ToIZny/7ezXP36heE7wkt4BfPN0c0W5+7nGBmLqLW
+C5dxCwS8P9/attM+niXiFf2nwRYZZ6aP0N5pvIrD4X0zeJStrc6fBaTlDd/dbRE=
+=xkWC
 -----END PGP SIGNATURE-----

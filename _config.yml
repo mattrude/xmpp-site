@@ -12,6 +12,8 @@ prosody-version: "0.10"
 owner_name: "Matt Rude"
 owner_pgpkey: "0xc4909ee495b0761f"
 
+register-web: 1
+
 xmpp-url: "mattrude.com" # The XMPP domain url
 xmpp-host: "im.mattrude.com" # The hostname of the server
 xmpp-conference-url: "conference.mattrude.com" # Multi-User Chat xep-0045

@@ -44,10 +44,10 @@ fingerprint = 77F1 D65B 5FF0 54DC 9286  6078 0314 CD85 0330 5F35</code></pre>
         </div>
     </div>
     <h3 id="signed-contact-information">Signed Contact Information</h3>
-    <p>A signed copy of this information may be found <a href="https://im.mattrude.com/contact.txt">here</a>, or using my <a href="https://keyserver.mattrude.com/d/0x0314CD8503305F35">ECC key</a>, may be found <a href="https://im.mattrude.com/contact-ecc.txt">here</a>. You may validate these files by running the below commands:</p>
+    <p>A signed copy of this information, using my <a href="https://keyserver.mattrude.com/d/0xc4909ee495b0761f">standard key</a>, may be found <a href="https://im.mattrude.com/contact.txt">here</a>, or using my <a href="https://keyserver.mattrude.com/d/0x0314CD8503305F35">ECC key</a>, may be found <a href="https://im.mattrude.com/contact-ecc.txt">here</a>. You may validate these files by running the below commands:</p>
     <div class="highlighter-rouge">
         <pre class="highlight"><code style="overflow:auto;word-wrap:normal;white-space:pre;">curl -s https://im.mattrude.com/contact.txt |gpg --keyserver-options auto-key-retrieve --auto-key-locate pka --verify
-curl -s https://im.mattrude.com/contact-ecc.txt |gpg --keyserver-options auto-key-retrieve --auto-key-locate pka --verify
+curl -s https://im.mattrude.com/contact-ecc.txt |gpg2 --keyserver-options auto-key-retrieve --auto-key-locate pka --verify
 </code></pre>
     </div>
 </div>

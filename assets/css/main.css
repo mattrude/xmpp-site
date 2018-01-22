@@ -34,6 +34,10 @@ td.FAILED {
 /*    padding-top: 60px; */
 }
 
+#definitions h2 {
+    padding-top: 60px;
+}
+
 @media (max-width: 968px) {
       .pull-right, .pull-left {
               text-align: center;
