@@ -6,6 +6,7 @@ permalink: /help/client-list/
 
 Below is an incomplete list of avalable clients for XMPP services.
 
+<div class="row">
 <table class='table'>
 <thead>
 <tr>
@@ -296,3 +297,4 @@ Below is an incomplete list of avalable clients for XMPP services.
 </tr>
 </tbody>
 </table>
+</div>

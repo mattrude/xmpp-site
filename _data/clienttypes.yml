@@ -4,5 +4,5 @@
 - name: Destop/Laptop
   slug: desktop
 
-- name: Server
-  slug: server
+#- name: Server
+#  slug: server

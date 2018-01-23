@@ -8,6 +8,7 @@ permalink: /help/
   <center><span class="fa fa-question-circle" style="font-size:60px;" aria-hidden="true"></span><h1>User Guides</h1></center>
 </div>
 
+<div class="row">
 <div class="col-md-4">
 <h2>Client Guides</h2>
 <ul>
@@ -38,4 +39,5 @@ permalink: /help/
 <li><a href="{{ site.url }}/doc/supported-standards/">Supported XMPP Standards</a></li>
 <li><a href="{{ site.url }}/doc/compliance/">Server Compliance</a></li>
 </ul>
+</div>
 </div>

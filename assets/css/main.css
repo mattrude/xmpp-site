@@ -17,6 +17,15 @@ body {
 .section-headder {
     padding: 60px 0 10px;
 }
+
+.list-inline {
+  display: inline;
+}
+
+.site-title h1 {
+  font-size: 4em;
+}
+
 #contact-list {
   font-size:2em;
   text-align: center;
@@ -36,6 +45,11 @@ td.FAILED {
 
 #definitions h2 {
     padding-top: 60px;
+}
+
+.nav-item a {
+    padding: 0 10px;
+    color: #fff;
 }
 
 @media (max-width: 968px) {

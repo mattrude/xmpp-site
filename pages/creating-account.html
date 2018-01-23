@@ -12,9 +12,10 @@ permalink: /help/creating-a-new-account/
 
 <div class="container offsetanchor" id="clients">
     {% for type in site.data.clienttypes %}
+    <center><h2 style="padding:20px 0;font-size:3em;">{{ type.name }}</h2></center>
     <div class="row">
-        <center><h2>{{ type.name }}</h2></center>
         <div class="client-{{ type.slug }}">
+            <div class="row">
             {% for client in site.data.clients %}
             {% if client.type == type.slug %}
             <div class="col-md-4" style="min-height:280px;">
@@ -31,6 +32,7 @@ permalink: /help/creating-a-new-account/
             </div><!-- end class col-md-4 -->
             {% endif %}
             {% endfor %}
+            </div><!-- end class row -->
         </div><!-- end class client-{{ type.slug }} -->
     </div><!-- end class row -->
     {% endfor %}

@@ -71,10 +71,10 @@
   img: spark_logo.png
   text: Spark is an Open Source, cross-platform IM client optimized for businesses and organizations. It features built-in support for group chat, telephony integration, and strong security. It also offers a great end-user experience with features like in-line spell checking, group chat room bookmarks, and tabbed conversations.
 
-- name: Profanity
-  type: server
-  platform: 	Console / Text-Mode
-  encryption: TLS, OTR
-  domain: profanity.im
-  url: http://profanity.im/
-  text: Profanity is a console based XMPP client written in C using ncurses and libstrophe, inspired by Irssi
+#- name: Profanity
+#  type: server
+#  platform: 	Console / Text-Mode
+#  encryption: TLS, OTR
+#  domain: profanity.im
+#  url: http://profanity.im/
+#  text: Profanity is a console based XMPP client written in C using ncurses and libstrophe, inspired by Irssi
