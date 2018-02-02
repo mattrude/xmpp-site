@@ -52,8 +52,13 @@ td.FAILED {
     color: #fff;
 }
 
-@media (max-width: 968px) {
-      .pull-right, .pull-left {
-              text-align: center;
-       } 
+@media (max-width: 768px) {
+    .pull-right, .pull-left {
+        text-align: center;
+        float: inherit;
     }
+    
+    .site-title h1 {
+        display: none;
+    }
+}

@@ -50,10 +50,12 @@ permalink: /
     </div>
 </div>
 
-{% if site.register-web == 1 %}
+{% if site.register-web == 2 %}
 <div id="register">
-    <div id="feature-register" style="background-color:#eee;">
-         {% include registration.html %}
+    <div id="feature-register" style="background-color:#eee;padding:60px 0;">
+        <div id="feature-register" class="container offsetanchor">
+            {% include registration.html %}
+        </div>
     </div>
 </div>
 {% endif %}
@@ -66,7 +68,6 @@ permalink: /
                     <span class="{{ section.glyph }}" style="font-size:100px;" aria-hidden="true"></span>
                     <h2>{{ section.name }}</h2>
                 </center></div>
-            <div class="row">
                 <div class="feature-{{ section.slug }}">
                     <div class="row">
                         {% for feature in site.data.features %}
@@ -79,7 +80,6 @@ permalink: /
                         {% endfor %}
                     </div>
                 </div>
-            </div>
         </div>
     </div>
     {% endfor %}
