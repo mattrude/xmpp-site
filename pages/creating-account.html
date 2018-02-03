@@ -1,80 +1,76 @@
 ---
 layout: default
 title: Creating a New Account
-permalink: /help/creating-a-new-account/
+permalink: /new-user-guide/
 ---
 
-<div class="section-headder">
-  <center><h1>Step 1: Download a Client</h1></center>
-</div>
+<div id="creating-account" class="container">
+    <div class="row justify-content">
 
+        <!-- Starting the Top Jubotron of the page -->
+        <div class="jumbotron">
+            <h1 class="display-4">New User Guide</h1>
+            <p class="lead">This page is here to help a new user, register an account, download the needed software, and log into the server.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead float-xs-right">
+                <a class="btn btn-primary btn-lg" href="#download" role="button">Get Started</a>
+            </p>
+        </div>
+        <!-- Ending the Top Jubotron of the page -->
 
+        <!-- Starting the page index nav menu -->
+        <div class="col-3" style="padding-left:0;">
+            <nav id="navbar-main" class="sticky-top navbar navbar-light" style="padding-top:80px;padding-left:0;margin-top:-80px;">
+                <a class="navbar-brand" href="#">Index</a>
+                <nav id="nav-body" class="nav nav-pills flex-column bg-light">
+                    <a class="nav-link" href="#overview">Overview</a>
+                    <a class="nav-link" href="#download">Download a Client</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#mobile">Mobile</a>
+                        <a class="nav-link ml-3 my-1" href="#desktop">Desktop</a>
+                    </nav>
+                    <a class="nav-link" href="#register">Register an Account</a>
+                    <a class="nav-link" href="#connect">Connect your Account</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+                        <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+                    </nav>
+                </nav>
+            </nav>
+        </div>
+        <!-- Ending the page index nav menu -->
 
-<div class="container offsetanchor" id="clients">
-    {% for type in site.data.clienttypes %}
-    <center><h2 style="padding:20px 0;font-size:3em;">{{ type.name }}</h2></center>
-    <div class="row">
-        <div class="client-{{ type.slug }}">
-            <div class="row">
-            {% for client in site.data.clients %}
-            {% if client.type == type.slug %}
-            <div class="col-md-4" style="min-height:280px;">
-                {% if client.img %}
-                <center><img src="{{ site.url }}/assets/img/clients/{{ client.img }}" height="80px" /></center>
-                {% endif %}
-                <center><h3>{{ client.name }}</h3></center>
-                <ul class="list-group">
-                    <li class="list-group-item"><b>Platform:</b> {{ client.platform }}</li>
-                    <li class="list-group-item"><b>Encryption:</b> {{ client.encryption }}</li>
-                    <li class="list-group-item"><b>Website:</b> <a href="{{ client.url }}">{{ client.domain }}</a></li>
-                    {% if client.text %}<li class="list-group-item">{{ client.text }}</li>{% endif %}
-                </ul>
-            </div><!-- end class col-md-4 -->
-            {% endif %}
-            {% endfor %}
-            </div><!-- end class row -->
-        </div><!-- end class client-{{ type.slug }} -->
-    </div><!-- end class row -->
-    {% endfor %}
-</div><!-- end id clients -->
-
-
-
-
-<div class="section-headder">
-  <center><h1>Step 2: Choose a XMPP Server and Register an Account</h1></center>
-</div>
-
-
-<table class='table' style='width:100%'>
-    <thead>
-        <tr>
-            <th>Service Name</th>
-            <th>Registration Method</th>
-            <th><center>Website<br />Language</center></th>
-            <th><center>Service<br />Price</center></th>
-            <th><a href='https://xmpp.org/extensions/xep-0375.html'>XEP-0375</a> complient</th>
-            <th><a href='https://xmpp.org/extensions/xep-0368.html'>XEP-0368</a> complient</th>
-            <th><center>Tor Service</center></th>
-        </tr>
-   </thead>
-   <tbody>
-{% for service in site.data.clients-compliance %}
-        <tr>
-            <td style="min-width:150px;"><a href='{{ service.url }}'>{{ service.name }}</a></td>
-            <td style="min-width:150px;">{% if service.registration-url %}<a href="{{ service.registration-url }}">{{ service.registration }}</a>{% elsif service.registration %}{{ service.registration}}{% else %}<i>Unknown</i>{% endif %}</td>
-            <td><center>{{ service.language }}</center></td>
-            <td><center>{% if service.price %}{{ service.price }}{% else %}Free{% endif %}<center></td>
-            {% if service.xep-375 == 1 %}<td class=PASSED style="width:75px;"><center>Yes</center></td>{% else %}<td class=FAILED><center>No</center></td>{% endif %}
-            {% if service.xep-368 == 1 %}<td class=PASSED style="width:75px;"><center>Yes</center></td>{% else %}<td class=FAILED><center>No</center></td>{% endif %}
-            {% if service.tor %}<td class=PASSED><center>{{ service.tor }}</center></td>{% else %}<td class=FAILED><center>No</center></td>{% endif %}
-        </tr>
-{%  endfor %}
-    </tbody>
-</table>
-
-
-
-<div class="section-headder">
-  <center><h1>Step 3: Connect your Client to you New Account</h1></center>
-</div>
+        <!-- Starting the content section of the page -->
+        <div class="col-9">
+            <!-- This is the Overview Section -->
+            <div id="overview" class="section-headder">
+                <center><h1>Overview</h1></center>
+            </div>
+            
+            <p>It may look like there are a bunch of steps to get all setup, but it is really pretty easy and quick to do.</p>
+            
+            <p></p>
+            
+            <!-- This is the Download a Client Section -->
+            <div id="download" class="section-headder">
+                <center><h1>Step 1: Download a Client</h1></center>
+            </div>
+            
+            {% include guide-download.html %}
+            
+            <!-- This is the Register an Account Section -->
+            <div id="register" class="section-headder">
+                <center><h1>Step 2: Choose a XMPP Server and Register an Account</h1></center>
+            </div>
+            
+            {% include guide-register.html %}
+            
+            <!-- This is the Connect your Client Section -->
+            <div id="connect" class="section-headder">
+                <center><h1>Step 3: Connect your Client to you New Account</h1></center>
+            </div>
+        </div>
+        <!-- Ending the content section of the page -->
+    </div> <!-- Closing the row justify-content clases -->
+</div> <!-- Closing the ID creating-account and the main container class
